@@ -20,10 +20,10 @@ curl -O https://raw.githubusercontent.com/elixir-lang/elixir-tmbundle/master/Syn
 
 Then, in CodeRunner's preferences visit the "Languages" tab and click the plus sign in the lower left. Name the new syntax "Elixir" and then in the "Syntax Mode" dropdown box select `Other…`. Navigate to where you saved the `Elixir.tmLanguage` file earlier and select it. You're almost finished. The following two screenshots display the required configuration to start using Elixir:
 
-![CodeRunner Elixir Settings](/dist/img/2016-06-18_8_17_37AM.png)
+![CodeRunner Elixir Settings](/dist/img/2016-06-18_8_17_37AM.png){:data-action="zoom"}
 
-![CodeRunner Elixir Template](/dist/img/2016-06-18_8_18_10AM.png)
+![CodeRunner Elixir Template](/dist/img/2016-06-18_8_18_10AM.png){:data-action="zoom"}
 
 Once those settings are saved in CodeRunner you'll have the option to start using Elixir. Just choose it in the dropdown box for a new file:
 
-![CodeRunner Elixir Example](/dist/img/2016-06-18_2_48_03PM.png)
+![CodeRunner Elixir Example](/dist/img/2016-06-18_2_48_03PM.png){:data-action="zoom"}
