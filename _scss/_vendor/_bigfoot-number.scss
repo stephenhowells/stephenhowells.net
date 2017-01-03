@@ -23,12 +23,12 @@
 $popover-width:                         22em !default;                           // Ideal width of the popover
 $popover-max-width:                     90% !default;                            // Best as a % to accommodate smaller viewports
 $popover-max-height:                    15em !default;                           // Maximum size of the content area
-$popover-color-background:              rgb(250, 250, 250) !default;             // Color of the popover background
-$popover-border-radius:                 0.5em !default;                          // Radius of the corners of the popover
-$popover-border:                        1px solid rgb(195, 195, 195) !default;   // Border of the popover/ tooltip
+$popover-color-background:              #fafafa !default;             // Color of the popover background
+$popover-border-radius:                 0.2em !default;                          // Radius of the corners of the popover
+$popover-border:                        1px solid #eaeaea !default;   // Border of the popover/ tooltip
 $popover-inactive-opacity:              0 !default;                              // Opacity of the popover when instantiated/ deactivating
-$popover-active-opacity:                0.97 !default;                           // Opacity of the popover when active
-$popover-box-shadow:                    0px 0px 8px rgba(0, 0, 0, 0.3) !default; // Sets the box shadow under the popover/ tooltip
+$popover-active-opacity:                1 !default;                           // Opacity of the popover when active
+$popover-box-shadow:                    0px 2px 6px rgba(0, 0, 0, 0.1) !default; // Sets the box shadow under the popover/ tooltip
 $popover-bottom-position:               auto !default;                           // Sets the bottom position of the popover. Use only when setting positionPopover to false in the script
 $popover-left-position:                 auto !default;                           // Sets the left position of the popover. Use only when setting positionPopover to false in the script
 $popover-tooltip-size:                  1.3em !default;                          // Sets the side lengths of the tooltip
@@ -99,13 +99,13 @@ $popover-transition-default-timing-function:     ease !default;
 // KEY VARIABLES
 // =============================================================================
 
-$button-height:                         0.95em !default;                         // The total height of the button
+$button-height:                         1.2em !default;                         // The total height of the button
 $button-width:                          auto !default;                           // The total button width (applies only if $button-apply-dimensions is true)
 $button-inner-circle-size:              0.25em !default;                         // Total height/width of the ellipsis circles
-$button-border-radius:                  0.3em !default;                          // Border radius on the button itself
+$button-border-radius:                  0.1em !default;                          // Border radius on the button itself
 $button-left-margin:                    0.2em !default;                          // Margin between the button and the text to its left
 $button-right-margin:                   0.1em !default;                          // Margin between the button and the text to its right
-$button-vertical-adjust:                -0.1em !default;                         // Pushes the buttons along the vertical axis to align it with text as desired
+$button-vertical-adjust:                -0.3em !default;                         // Pushes the buttons along the vertical axis to align it with text as desired
 $button-inner-circle-left-margin:       1*$button-inner-circle-size !default;    // Space between the ellipsis circles
 
 $button-color:                          rgb(110, 110, 110) !default;             // Background color of the button
@@ -198,7 +198,7 @@ $button-transition-properties:      background-color !default;
 
   // DISPLAY AND SIZING
   box-sizing: border-box;
-  -moz-box-sizing: border-box;;
+  -moz-box-sizing: border-box;
   display: inline-block;
   padding: $button-per-side-padding;
   margin: 0 $button-right-margin 0 $button-left-margin;
@@ -207,11 +207,11 @@ $button-transition-properties:      background-color !default;
   border: none;
   border-radius: $button-border-radius;
   cursor: pointer;
-  background-color: rgba($button-color, $button-standard-opacity);
+  background-color: mix(#fafafa, $accent-color, 94%);
   backface-visibility: hidden;
 
   // TEXT
-  font-size: 1rem;
+  font-size: 1.27rem;
   line-height: 0;
   vertical-align: middle;
   text-decoration: none;
@@ -221,18 +221,22 @@ $button-transition-properties:      background-color !default;
   transition-property: $button-transition-properties;
   transition-duration: $popover-transition-default-duration;
 
-  &:hover,
+  &:hover {
+    outline: none;
+    background-color: $accent-color;
+  }
+
   &:focus {
     outline: none;
-    background-color: rgba($button-hovered-color, $button-hovered-opacity);
+    background-color: mix(#fafafa, $accent-color, 94%);
   }
 
   &:active {
-    background-color: rgba($button-activating-color, $button-activating-opacity);
+    background-color: $accent-color;
   }
 
   &.is-active {
-    background-color: rgba($button-active-color, $button-active-opacity);
+    background-color: $accent-color;
     transition-delay: $button-active-style-delay;
   }
 
@@ -579,6 +583,11 @@ $button-transition-properties:      background-color !default;
   img { max-width: 100%; }
   *:last-child { margin-bottom: 0 !important; }
   *:first-child { margin-top: 0 !important; }
+
+  p {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
 }
 
 
@@ -648,8 +657,8 @@ $button-transition-properties:      background-color !default;
 .bigfoot-footnote__button {
   position: relative;
   height: $button-height;
-  width: 1.5em;
-  border-radius: $button-height/2;
+  width: 1.2em;
+  border-radius: $button-height/4;
 
   &:after {
     // CONTENT
@@ -664,9 +673,9 @@ $button-transition-properties:      background-color !default;
     display: block;
 
     // TEXT
-    font-size: $button-height*0.6;
-    font-weight: bold;
-    color: rgba($button-color, 0.5);
+    font-size: $button-height*0.8;
+    font-weight: 400;
+    color: $accent-color;
 
     // TRANSITIONS
     transition: color $popover-transition-default-duration $popover-transition-default-timing-function;
