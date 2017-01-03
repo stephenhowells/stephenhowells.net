@@ -1,0 +1,157 @@
+a.link-item {
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-family: $headline-fonts;
+  transition: .3s;
+  text-decoration: underline;
+  color: $accent-color;
+  &:hover {
+    color: $body-font-color;
+  }
+}
+
+a.link_icon {
+  border: 0;
+  margin-left: 12px;
+  color: lighten($body-font-color, 50%);
+  font-size: 1.2em;
+  font-weight: 400;
+  transition: .3s;
+  &:hover {
+    background: none;
+    color: $body-font-color;
+  }
+}
+
+h1.page-title {
+  border-bottom: 0;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.highlight {
+  border-radius: 4px;
+}
+
+.mono {
+  font-family: $code-font;
+}
+
+.post-meta, .post-meta-link {
+  display: block;
+  color: $body-font-color;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  text-align: center;
+  color: $accent-color;
+  font-family: $headline-fonts;
+}
+
+.post-meta-link {
+  font-family: $date-font;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.pubdate {
+  font-family: $date-font;
+  letter-spacing: 0;
+  font-size: 0.6em;
+}
+
+.archives {
+  h1 {
+    display: block;
+    overflow: hidden;
+  }
+  h2 {
+    display: block;
+    overflow: hidden;
+  }
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .archive-list {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 60px 0;
+  }
+}
+
+// Search Page
+#search {
+  margin: 34px 0 40px 0;
+  padding: 0 10px;
+  input[type="text"], textarea {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid $bg-contrast !important;
+    background: $body-bg-color;
+  }
+}
+
+#search-query {
+  cursor: auto;
+  -webkit-user-select: text;
+}
+
+#search-results {
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+
+.entry {
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+.article-divider {
+  display: block;
+  text-align: center;
+  margin-bottom: 120px;
+  height: 1px;
+  line-height: 1px;
+}
+
+// Footnotes
+.footnotes {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-top: 1px dashed #eaeaea;
+  padding: 20px 10px 0 10px;
+  color: $body-font-color;
+  max-width: $max-width;
+  ol {
+    li {
+      margin: 0;
+      font-size: 0.8em;
+    }
+  }
+}
+
+a.footnote {
+  border: 0;
+}
+
+a.reversefootnote {
+  background: none;
+  color: $accent-color;
+  text-decoration: none;
+  font-family: $footnotes;
+  &:hover {
+    color: $body-font-color;
+    text-decoration: none;
+  }
+}

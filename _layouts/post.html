@@ -1,0 +1,15 @@
+---
+layout: default
+custom_css_class: single-post
+---
+<article>
+  {% if page.type == 'post' %}
+    <h1 class="post-title">{{ page.title | no_widows }}</h1>
+    <p class="post-meta">{% include time.html the_date=page.date %}</p>
+    {{ content }}
+  {% elsif page.type == 'link' %}
+    <h4><a href="{{ page.link }}" class="link-item">{{ page.title | no_widows }}</a></h4>
+    {{ content }}
+    <p class="post-meta-link">{% include time.html the_date=page.date %}</p>
+  {% endif %}
+</article>

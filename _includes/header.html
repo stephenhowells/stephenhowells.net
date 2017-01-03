@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="{% if page.custom_css_class %}{{ page.custom_css_class }}{% endif %} {% if page.special_css_class %}{{ page.special_css_class }}{% endif %}">
+    <div class="page-wrap">
+    {% include nav.html %}

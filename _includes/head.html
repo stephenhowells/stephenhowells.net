@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="Stephen Howells">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="format-detection" content="telephone=no">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="shortcut icon" href="/dist/img/favicon.ico?v=03" />
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/apple-touch-icon.png?v=04" />
+  <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6185512/7037372/css/fonts.css" />
+  <link rel="stylesheet" href="/dist/css/vendor/bootstrap.min.css">
+  <style>
+    {% include main.min.css %}
+  </style>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" data-proofer-ignore>
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for StephenHowells.net" href="{{ site.url }}/feeds/main.xml" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+  <![endif]-->
+</head>

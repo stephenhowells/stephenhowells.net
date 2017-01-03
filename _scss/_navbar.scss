@@ -1,0 +1,67 @@
+.navbar-static-top {
+  margin-bottom: 30px;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+  background: mix(#fafafa, $accent-color, 94%) !important;
+}
+
+.navbar-default .navbar-toggle {
+  border: 1px solid $accent-color !important;
+  color: $accent-color;
+  margin: 12px 15px 0 0;
+  padding: 0 10px;
+  line-height: 24px;
+  border-radius: 0;
+  font-family: $headline-fonts;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background: none;
+}
+
+.navbar {
+  border-bottom: 1px solid #eaeaea;
+  background: #fafafa;
+  font-family: $font-stack;
+  margin-bottom: 45px;
+}
+
+.navbar-default .navbar-brand {
+  color: $body-font-color;
+  font-weight: 700;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+  font-family: $headline-fonts;
+  span {
+    color: lighten($body-font-color, 50%);
+  }
+  &:hover {
+    color: $body-font-color;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $body-font-color;
+  font-size: 0.7em;
+  text-decoration: none;
+  border-bottom: 0px;
+  font-weight: 400;
+  background: none;
+  i {
+    font-size: 1.6em !important;
+    color: $body-font-color;
+    vertical-align: middle;
+  }
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.navbar-collapse {
+  border-top: 0px;
+}

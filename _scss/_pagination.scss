@@ -1,0 +1,36 @@
+.pager li > a {
+  border-radius: 0px;
+  background: #fafafa;
+  color: $accent-color;
+  width: 30px;
+  border: 1px solid #eaeaea;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  height: 40px;
+  i {
+    line-height: inherit;
+    vertical-align: middle;
+  }
+}
+
+.pager li > a.previous-link {
+  border-left: 0;
+  text-align: right;
+  i {
+    padding-right: 8px;
+  }
+}
+
+.pager li > a.next-link {
+  border-right: 0;
+  text-align: left;
+  i {
+    padding-left: 8px;
+  }
+}
+
+.pager li > a:hover {
+  color: $body-font-color;
+  background: $bg-contrast;
+}

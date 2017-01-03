@@ -1,0 +1,13 @@
+---
+layout: post
+title: Rails 5
+type: link
+link: http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/
+date: "2016-07-01 11:07:22"
+categories: links
+---
+David Heinemeier Hansson:
+
+>It’s taken hundreds of contributors and thousands of commits to get here, but what a destination: Rails 5.0 is without a doubt the best, most complete version of Rails yet.
+
+Rails continues to be the gold standard for iterative improvement and community involvement.
