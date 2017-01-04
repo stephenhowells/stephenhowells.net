@@ -86,8 +86,9 @@ h1.page-title {
 }
 
 .four-oh-four {
-  h1 {
+  h2 {
     margin-bottom: 40px;
+    text-align: center;
     span {
       color: $accent-color;
     }
@@ -97,11 +98,17 @@ h1.page-title {
     margin-bottom: 40px;
   }
 
-  p.explanation {
+  .explanation {
+    display: block;
+    font-family: $code-font;
     background: #fafafa;
     border: 1px solid #eaeaea;
-    color: $body-font-color;
-    padding: 20px;
+    padding-top: 20px;
+
+    p {
+      font-size: 1em;
+      text-align: center;
+    }
   }
 }
 
