@@ -85,6 +85,26 @@ h1.page-title {
   }
 }
 
+.four-oh-four {
+  h1 {
+    margin-bottom: 40px;
+    span {
+      color: $accent-color;
+    }
+  }
+
+  video {
+    margin-bottom: 40px;
+  }
+
+  p.explanation {
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    color: $body-font-color;
+    padding: 20px;
+  }
+}
+
 // Search Page
 #search {
   margin: 34px 0 40px 0;

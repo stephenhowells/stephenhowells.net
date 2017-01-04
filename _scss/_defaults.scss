@@ -177,12 +177,20 @@ article {
   position: relative;
   clear: both;
   width: 100%;
+
   h1, h2, h3, h4, h5, h6, p, ol, ul, table, blockquote, input#search-query {
     padding-left: 10px;
     padding-right: 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     max-width: $max-width;
+  }
+
+  video {
+    display: block;
+    max-width: $max-width + 120px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    position: relative;
   }
 }
 
