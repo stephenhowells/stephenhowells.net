@@ -30,9 +30,9 @@ end
 Liquid::Template.register_filter(Jekyll::WidowFilter)
 ```
 
-```html
-<!-- In a Liquid template the filter is easily invoked. -->
+The filter is easily invoked in a Liquid template:
 
+```html
 <h1>{{ post.title | no_widows }}</h1>
 ```
 
