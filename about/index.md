@@ -23,15 +23,17 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - [CodeRunner 2](https://coderunnerapp.com)
 - [DEVONthink](http://www.devontechnologies.com/products/devonthink/overview.html)
 - [Drafts 4](http://agiletortoise.com/drafts)
-- [Feed Wrangler](https://feedwrangler.net)
+- [Feedbin](https://feedbin.com)
 - [Hyper](https://hyper.is)
 - [Kaleidoscope 2](http://www.kaleidoscopeapp.com)
 - [Now](https://zeit.co/now)
 - [Pinboard](http://pinboard.in)
+- [Reeder](http://reederapp.com/)
+- [Ruby on Rails](http://rubyonrails.org/)
+- [Sketch](https://www.sketchapp.com/)
 - [Todoist](https://todoist.com)
 - [Tower 2](http://www.git-tower.com)
 - [Transmit](http://panic.com/transmit)
-- [Unread](http://supertop.co/unread)
 
 <small>\* I am not affiliated with any of the products listed above.</small>
 
