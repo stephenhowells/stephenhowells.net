@@ -11,6 +11,7 @@ body {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -100px;
+  padding-top: 40px;
 }
 
 .page-wrap:after {
@@ -21,19 +22,19 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: $headline-fonts;
-  font-weight: 700;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   font-size: 3.0em;
   line-height: 1.4em;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
   small {
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -154,7 +155,7 @@ p code, li code {
   color: rgba(0,0,0,0.5);
   white-space: nowrap;
   background: #fafafa;
-  border-radius: 3px;
+  border-radius: 0px;
   border: 1px #e0e0e0 solid;
   padding: 4px;
   font-size: 0.85em !important;
@@ -168,7 +169,7 @@ blockquote {
   border-left: 4px solid $accent-color;
   padding: 0 20px;
   margin-left: 20px;
-  color: #888;
+  color: lighten($body-font-color, 10%);
 }
 
 article {

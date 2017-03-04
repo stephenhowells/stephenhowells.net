@@ -1,10 +1,10 @@
 a.link-item {
-  font-weight: 700;
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.4em;
   font-family: $headline-fonts;
   transition: .3s;
-  text-decoration: underline;
+  text-decoration: none;
   color: $accent-color;
   &:hover {
     color: $body-font-color;
@@ -14,7 +14,7 @@ a.link-item {
 a.link_icon {
   border: 0;
   margin-left: 12px;
-  color: lighten($body-font-color, 50%);
+  color: lighten($body-font-color, 10%);
   font-size: 1.2em;
   font-weight: 400;
   transition: .3s;
@@ -40,22 +40,16 @@ h1.page-title {
 
 .post-meta, .post-meta-link {
   display: block;
-  color: $body-font-color;
+  color: lighten($body-font-color, 10%);
   padding-bottom: 4px;
   margin-bottom: 20px;
-}
-
-.post-meta {
-  text-align: center;
-  color: $accent-color;
-  font-family: $headline-fonts;
+  font-size: 0.8em;
+  text-align: left;
+  font-family: $date-font;
 }
 
 .post-meta-link {
-  font-family: $date-font;
   margin-top: 0px;
-  text-align: left;
-  font-size: 0.7em;
 }
 
 .pubdate {
@@ -114,12 +108,13 @@ h1.page-title {
 
 // Search Page
 #search {
-  margin: 34px 0 40px 0;
+  margin: 34px auto 40px;
   padding: 0 10px;
+  max-width: $max-width;
   input[type="text"], textarea {
     outline: none;
     box-shadow: none !important;
-    border: 1px solid $bg-contrast !important;
+    border: 1px solid $accent-color !important;
     background: $body-bg-color;
   }
 }

@@ -1,9 +1,8 @@
 .pager li > a {
   border-radius: 0px;
-  background: #fafafa;
+  background: mix(#fafafa, $accent-color, 94%) !important;
+  border: 1px solid $accent-color !important;
   color: $accent-color;
-  width: 30px;
-  border: 1px solid #eaeaea;
   padding: 0;
   margin: 0;
   line-height: 40px;
@@ -15,18 +14,20 @@
 }
 
 .pager li > a.previous-link {
-  border-left: 0;
+  border-left: 0 !important;
   text-align: right;
   i {
     padding-right: 8px;
+    padding-left: 30px;
   }
 }
 
 .pager li > a.next-link {
-  border-right: 0;
+  border-right: 0 !important;
   text-align: left;
   i {
     padding-left: 8px;
+    padding-right: 30px;
   }
 }
 

@@ -1,13 +1,13 @@
 // Fonts
-$font-stack:  "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headline-fonts: "Sentinel SSm A", "Sentinel SSm B", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font-stack:  "Whitney SSm A", "Whitney SSm B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+$headline-fonts: "Whitney Cond SSm A", "Whitney Cond SSm B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 $code-font: "Operator Mono A", "Operator Mono B", 'Source Code Pro', Consolas, Monaco, 'Andale Mono', monospace;
-$date-font: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$footnotes: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$date-font: "Whitney SSm A", "Whitney SSm B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+$footnotes: "Whitney SSm A", "Whitney SSm B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 
 // Colors
-$accent-color: #ce2d10;
-$body-font-color: #414141; // Matte Black
+$accent-color: #f135a6;
+$body-font-color: #555555;
 $body-bg-color: #ffffff;
 $bg-contrast: #efefef;
 

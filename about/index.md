@@ -13,7 +13,7 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - Proudly powered by [Jekyll](http://jekyllrb.com).
 - Hosted on AWS with S3 and CloudFront.
 - All development for this site occurs in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
-- Typefaces are [Whitney](http://www.typography.com/fonts/whitney/overview/), [Sentinel](http://www.typography.com/fonts/sentinel/overview/), and [Operator](http://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
+- Typefaces are [Whitney](http://www.typography.com/fonts/whitney/overview/) and [Operator](http://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
 
 ## The Tools I Use
 

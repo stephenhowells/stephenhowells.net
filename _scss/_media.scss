@@ -1,22 +1,28 @@
 @media (max-width: 767px) {
+  .page-wrap {
+    padding-top: 0;
+  }
+
+  .navbar {
+    margin: 0 auto 40px !important;
+  }
   .navbar-default .navbar-nav {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .navbar-default .navbar-nav > li:first-child {
-    border-top: 1px solid #eaeaea;
-  }
+
   .navbar-default .navbar-nav.navbar-right > li:first-child {
     border-top: 0;
     border-bottom: 0;
   }
   .navbar-default .navbar-nav > li {
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 0;
     a {
       color: lighten($body-font-color, 15%);
       font-family: $font-stack;
       font-size: 0.7em;
-      background: #fafafa;
+      background: transparent;
+      padding-left: 10px;
       i {
         font-size: 1.2em;
         display: none;
@@ -35,10 +41,12 @@
   h1 {
     font-size: 2.4em;
     line-height: 1.4em;
-    text-align: center;
+  }
+  h2 {
+    font-size: 1.8em;
   }
   a.link-item {
-    font-size: 1.35em;
+    font-size: 1.1em;
   }
   a.link_icon {
     font-size: 1em;

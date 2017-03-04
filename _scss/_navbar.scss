@@ -24,39 +24,40 @@
 }
 
 .navbar {
-  border-bottom: 1px solid #eaeaea;
-  background: #fafafa;
+  border-bottom: 0;
+  background: transparent;
   font-family: $font-stack;
-  margin-bottom: 45px;
+  margin: 20px auto 80px !important;
+  max-width: $max-width;
+  width: auto;
+  z-index: 1;
 }
 
 .navbar-default .navbar-brand {
   color: $body-font-color;
-  font-weight: 700;
+  font-weight: 600;
   background: none;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: $headline-fonts;
+  padding-left: 10px;
   span {
-    color: lighten($body-font-color, 50%);
+    color: lighten($body-font-color, 10%);
+    font-size: 0.85em;
   }
   &:hover {
-    color: $body-font-color;
+    color: $accent-color;
   }
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: $body-font-color;
-  font-size: 0.7em;
+  color: lighten($body-font-color, 10%);
+  font-family: $headline-fonts;
+  font-size: 0.8em;
   text-decoration: none;
-  border-bottom: 0px;
-  font-weight: 400;
-  background: none;
-  i {
-    font-size: 1.8em !important;
-    color: $body-font-color;
-    vertical-align: middle;
-  }
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0.12em;
   &:hover {
     color: $accent-color;
   }
