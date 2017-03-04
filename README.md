@@ -6,14 +6,14 @@
 
 ## Getting Started
 
-Building the site requires Ruby and Node.js. I personally use [NVM](https://github.com/creationix/nvm) to install Node and [rbenv](https://github.com/rbenv/rbenv) for Ruby.
+Building the site requires Ruby, Node, and Yarn. I personally use [NVM](https://github.com/creationix/nvm) to install Node and [rbenv](https://github.com/rbenv/rbenv) for Ruby. Yarn is installed with Homebrew: `brew install yarn`.
 
 ``` sh
 $ git clone git@github.com:stephenhowells/stephenhowells.net.git
 $ cd stephenhowells.net
 $ bundle install
-$ npm install
-$ gulp
+$ yarn
+$ yarn run gulp
 ```
 
 The staging site will be available at `http://localhost:3000` by default.
