@@ -13,8 +13,8 @@ const psi         = require('psi')
 const sequence    = require('run-sequence')
 const exit        = require('gulp-exit')
 const portVal     = 3020
+const neat        = require("bourbon-neat").includePaths
 let site          = ''
-
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -56,7 +56,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], () => {
 gulp.task('sass', () => {
   console.log('Running Sass')
   return gulp.src('_scss/main.scss')
-    .pipe(sass())
+    .pipe(sass({ includePaths: neat }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(minifycss())
     .pipe(rename('main.min.css'))

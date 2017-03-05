@@ -1,10 +1,7 @@
+@import 'neat';
 @import 'globals';
-@import 'defaults';
-@import 'navbar';
-@import 'pagination';
-@import 'content';
-@import 'footer';
+@import 'layout';
+@import 'typography';
 @import 'syntax-highlighting';
 @import '_vendor/bigfoot-number';
 @import '_vendor/img-zoom';
-@import 'media';

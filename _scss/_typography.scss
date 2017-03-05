@@ -1,0 +1,132 @@
+body {
+  color: $body-font-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, ol, ul, table, blockquote, input#search-query {
+  font-family: $font-stack;
+}
+
+blockquote, li, p {
+  font-size: 0.95rem;
+  line-height: 1.85rem;
+}
+
+blockquote {
+  p {
+    color: lighten($body-font-color, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $headline-fonts;
+  font-weight: 600;
+}
+
+a {
+  color: $accent-color;
+  transition: .3s;
+  &:hover {
+    color: $body-font-color;
+  }
+  &:focus {
+    outline: none;
+    color: $body-font-color;
+  }
+  &.link-item {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: $headline-fonts;
+    text-decoration: none;
+  }
+  &.link_icon {
+    color: lighten($body-font-color, 10%);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    &:hover {
+      color: $body-font-color;
+    }
+  }
+}
+
+.post-meta, .post-meta-link {
+  font-size: 0.8rem;
+  text-align: left;
+  font-family: $date-font;
+  color: lighten($body-font-color, 10%);
+}
+
+.pubdate {
+  font-family: $date-font;
+  letter-spacing: 0;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 2rem
+}
+
+h1{
+  font-size: 2.6rem;
+  a {
+    color: $body-font-color;
+    text-decoration: none;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre code {
+  white-space: pre-wrap;
+  word-break: keep-all;
+  font-size: 0.9rem;
+  color: #151515;
+}
+
+code {
+  font-family: $code-font;
+  tab-size: 4;
+  line-height: 1.7rem;
+  word-break: normal;
+}
+
+p code, li code {
+  color: rgba(0,0,0,0.5);
+  white-space: nowrap;
+  background: #fafafa;
+  font-size: 0.85rem !important;
+}
+
+.mono {
+  font-family: $code-font;
+}
+
+footer {
+  i {
+    color: $accent-color;
+  }
+  p, li {
+    font-size: 0.75rem;
+    color: $body-bg-color;
+    font-family: $font-stack;
+    a {
+      color: darken($body-bg-color, 15%);
+    }
+  }
+  li {
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  .copy {
+    white-space: nowrap;
+  }
+}
