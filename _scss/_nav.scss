@@ -1,0 +1,28 @@
+nav {
+  @include grid-container;
+  .nav {
+    @include page-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin: 60px 0;
+    border-bottom: 1px solid #eaeaea;
+    .logo {
+      display: inline-block;
+      float: left;
+      .nav-logo {
+        padding: 0 12px 0 0;
+      }
+    }
+    ul {
+      float: right;
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

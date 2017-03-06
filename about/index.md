@@ -12,21 +12,17 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 
 - Proudly powered by [Jekyll](http://jekyllrb.com).
 - Hosted on AWS with S3 and CloudFront.
-- All development for this site occurs in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
+- All development for this site is done in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
 - Typefaces are [Whitney](http://www.typography.com/fonts/whitney/overview/) and [Operator](http://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
 
-## The Tools I Use
+## My Toolbox
 
 - [1Password](https://agilebits.com/onepassword)
 - [Alfred](http://www.alfredapp.com)
 - [Bear](http://www.bear-writer.com)
 - [CodeRunner 2](https://coderunnerapp.com)
-- [DEVONthink](http://www.devontechnologies.com/products/devonthink/overview.html)
-- [Drafts 4](http://agiletortoise.com/drafts)
 - [Feedbin](https://feedbin.com)
-- [Hyper](https://hyper.is)
 - [Kaleidoscope 2](http://www.kaleidoscopeapp.com)
-- [Now](https://zeit.co/now)
 - [Pinboard](http://pinboard.in)
 - [Reeder](http://reederapp.com/)
 - [Ruby on Rails](http://rubyonrails.org/)
@@ -34,8 +30,6 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - [Todoist](https://todoist.com)
 - [Tower 2](http://www.git-tower.com)
 - [Transmit](http://panic.com/transmit)
-
-<small>\* I am not affiliated with any of the products listed above.</small>
 
 ## Contact
 

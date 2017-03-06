@@ -3,13 +3,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p, ol, ul, table, blockquote, input#search-query {
+p, ol, ul, table, blockquote {
   font-family: $font-stack;
 }
 
 blockquote, li, p {
   font-size: 0.95rem;
-  line-height: 1.85rem;
+  line-height: 1.7rem;
 }
 
 blockquote {
@@ -21,6 +21,22 @@ blockquote {
 h1, h2, h3, h4, h5 {
   font-family: $headline-fonts;
   font-weight: 600;
+  small {
+    color: lighten($body-font-color, 10%);
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem
 }
 
 a {
@@ -36,7 +52,7 @@ a {
   &.link-item {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.6rem;
+    line-height: 2rem;
     font-family: $headline-fonts;
     text-decoration: none;
   }
@@ -49,19 +65,63 @@ a {
       color: $body-font-color;
     }
   }
+  &.reversefootnote {
+    text-decoration: none;
+  }
+}
+
+nav {
+  .nav {
+    .logo {
+      .nav-logo {
+        color: $body-font-color;
+        font-family: $headline-fonts;
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 2rem;
+        &:hover {
+          color: $accent-color;
+        }
+        span {
+          color: lighten($body-font-color, 10%);
+          font-size: 0.85rem;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: lighten($body-font-color, 10%);
+          font-family: $headline-fonts;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          line-height: 2.25rem;
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .post-meta, .post-meta-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: left;
   font-family: $date-font;
   color: lighten($body-font-color, 10%);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .pubdate {
   font-family: $date-font;
   letter-spacing: 0;
-  font-size: 0.7em;
+  font-size: 0.5em;
   font-weight: 400;
   line-height: 2rem
 }
@@ -106,12 +166,62 @@ p code, li code {
   font-family: $code-font;
 }
 
+kbd {
+  background: #efefef;
+  color: $body-font-color;
+  font-size: 0.85em;
+  font-family: $code-font;
+  padding: 2px 4px;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+.search-query {
+  font-size: 0.8rem;
+  font-family: $code-font;
+}
+
+.four-oh-four {
+  h1 {
+    span {
+      color: $accent-color;
+    }
+  }
+  .explanation {
+    p {
+      font-size: 1em;
+      font-family: $code-font;
+    }
+  }
+}
+
+.pager li > a {
+  color: $accent-color;
+  line-height: 40px;
+  i {
+    line-height: inherit;
+    vertical-align: middle;
+  }
+  &:hover {
+    color: $body-font-color;
+    background: $bg-contrast;
+  }
+}
+
+.pager li > a.previous-link {
+  text-align: right;
+}
+
+.pager li > a.next-link {
+  text-align: left;
+}
+
 footer {
   i {
     color: $accent-color;
   }
   p, li {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: $body-bg-color;
     font-family: $font-stack;
     a {

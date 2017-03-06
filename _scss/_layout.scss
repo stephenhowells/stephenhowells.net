@@ -5,7 +5,12 @@ html, body {
 .page-wrap {
   min-height: 100%;
   margin-bottom: -100px;
-  padding-top: 40px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: $footer-height;
 }
 
 ul {
@@ -16,23 +21,36 @@ ul {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
 article {
   @include grid-container;
   margin-bottom:120px;
 
-  h1, h2, h3, h4, h5, h6, p, ol, ul, table, blockquote, input#search-query  {
+  h1, h2, h3, h4, h5, h6, p, ol, ul, table, blockquote, .archive-list, .search, video  {
     @include page-box;
-
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
+  }
+
+  p, ul, ol, blockquote, table, pre {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .highlighter-rouge {
+    overflow: hidden;
+    width: 100%;
   }
 
   pre {
     background: none;
     border-top: 1px #eaeaea solid;
     border-bottom: 1px #eaeaea solid;
-    margin-bottom: 0;
     overflow: hidden;
     width: 100%;
   }
@@ -40,7 +58,7 @@ article {
   pre code {
     @include page-box;
     overflow-x: auto;
-    padding: 20px 10px;
+    padding: 12px 10px;
     box-sizing: border-box;
   }
 
@@ -54,7 +72,7 @@ article {
     p, ul, ol {
       width: 100%;
       float: none;
-      margin-left: 10px;
+      margin-left: 0;
     }
   }
   .link_icon {
@@ -77,6 +95,11 @@ article {
   line-height: 1px;
 }
 
+.search {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 img {
   max-width: 100%;
   opacity: 1;
@@ -89,11 +112,56 @@ img {
   }
 }
 
+.archive-list {
+  margin: 0 0 60px 0;
+  * {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  h3 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.four-oh-four {
+  video {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .explanation {
+    width: 100%;
+    overflow: hidden;
+    background: #fafafa;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+.footnotes {
+  ol {
+    border-top: 1px dashed #eaeaea;
+    padding-top: 12px;
+    padding-left: 0px;
+    list-style-position: inside;
+    li {
+      padding: 0 10px;
+      p {
+        margin: 0 0 20px;
+        width: 100%;
+        padding-left: 10px;
+        float: none;
+        display: inline;
+      }
+    }
+  }
+}
+
 footer {
   @include grid-container;
   height: $footer-height;
   background-color: #414141;
-  padding-top: 12px;
+  padding-top: 16px;
   box-sizing: border-box;
   p, ul {
     @include page-box;
@@ -102,10 +170,13 @@ footer {
     margin-top: 0;
     padding: 0 10px;
   }
-  li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px 0 0;
+  ul {
     padding: 0 10px;
+    margin-bottom: 4px;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
   }
 }

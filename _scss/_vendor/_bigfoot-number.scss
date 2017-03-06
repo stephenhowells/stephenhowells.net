@@ -211,7 +211,7 @@ $button-transition-properties:      background-color !default;
   backface-visibility: hidden;
 
   // TEXT
-  font-size: 1.27rem;
+  font-size: 0.8rem;
   line-height: 0;
   vertical-align: middle;
   text-decoration: none;
@@ -587,6 +587,8 @@ $button-transition-properties:      background-color !default;
   p {
     font-size: 0.8em;
     line-height: 1em;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
