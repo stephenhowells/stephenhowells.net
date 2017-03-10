@@ -137,6 +137,10 @@ h1{
   }
 }
 
+.article-divider {
+  color: $bg-contrast;
+}
+
 pre {
   white-space: pre-wrap;
 }
@@ -196,24 +200,16 @@ kbd {
 }
 
 .pager li > a {
-  color: $accent-color;
-  line-height: 40px;
-  i {
-    line-height: inherit;
-    vertical-align: middle;
-  }
+  color: $body-bg-color;
+  font-family: $font-stack;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+  font-weight: 600;
   &:hover {
-    color: $body-font-color;
-    background: $bg-contrast;
+    color: $body-bg-color;
+    background: $accent-color;
   }
-}
-
-.pager li > a.previous-link {
-  text-align: right;
-}
-
-.pager li > a.next-link {
-  text-align: left;
 }
 
 footer {

@@ -18,27 +18,27 @@ custom_css_class: home
   </article>
   {% if post.type == 'post' %}
     <div class="article-divider">
-      <svg height="1" width="300">
-        <line x1="0" y1="0" x2="300" y2="0" style="stroke:#f135a6;stroke-width:1" />
-      </svg>
+      &#9830;&#9830;&#9830;
     </div>
   {% endif %}
 {% endfor %}
 
-<ul class="pager">
-  {% if paginator.previous_page %}
-    <li class="previous">
-      {% if paginator.previous_page == 1 %}
-        <a href="/" class="previous-link"><i class="icon ion-chevron-left"></i></a>
-      {% else %}
-        <a href="{{ paginator.previous_page_path }}/" class="previous-link"><i class="icon ion-chevron-left"></i></a>
-      {% endif %}
-    </li>
-  {% endif %}
+<div class="pager">
+  <ul>
+    {% if paginator.previous_page %}
+      <li class="previous">
+        {% if paginator.previous_page == 1 %}
+          <a href="/" class="previous-link">Prev</a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}/" class="previous-link">Prev</a>
+        {% endif %}
+      </li>
+    {% endif %}
 
-  {% if paginator.next_page %}
-    <li class="next">
-      <a href="{{ paginator.next_page_path }}/" class="next-link"><i class="icon ion-chevron-right"></i></a>
-    </li>
-  {% endif %}
-</ul>
+    {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path }}/" class="next-link">Next</a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
