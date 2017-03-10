@@ -1,5 +1,10 @@
 html, body {
   height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .page-wrap {
@@ -34,7 +39,6 @@ article {
     @include page-box;
     padding-left: 10px;
     padding-right: 10px;
-    box-sizing: border-box;
   }
 
   p, ul, ol, blockquote, table, pre {
@@ -59,7 +63,6 @@ article {
     @include page-box;
     overflow-x: auto;
     padding: 12px 10px;
-    box-sizing: border-box;
   }
 
   p code, li code {
@@ -162,7 +165,6 @@ footer {
   height: $footer-height;
   background-color: #414141;
   padding-top: 16px;
-  box-sizing: border-box;
   p, ul {
     @include page-box;
   }
