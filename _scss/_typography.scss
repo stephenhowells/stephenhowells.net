@@ -182,7 +182,7 @@ kbd {
 
 .search-query {
   font-size: 0.8rem;
-  font-family: $code-font;
+  font-family: $font-stack;
 }
 
 .four-oh-four {
@@ -235,4 +235,8 @@ footer {
   .copy {
     white-space: nowrap;
   }
+}
+
+.archives h1 {
+  margin-bottom: 72px;
 }
