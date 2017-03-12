@@ -19,3 +19,4 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+  footnote_backlink: '&#x21A9;&#xFE0E;'
