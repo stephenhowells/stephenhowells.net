@@ -91,10 +91,10 @@ methods: {
         password: this.password
       }
     })
-    .then(function (response) {
+    .then(response => {
       // whatever you want
     })
-    .catch(function (error) {
+    .catch(error => {
       // whatever you want
     })
   }
