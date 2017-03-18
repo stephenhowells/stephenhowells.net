@@ -78,6 +78,31 @@ end
 
 This controller is mostly copied from a [Stack Overflow answer](http://stackoverflow.com/a/36209399/1678740) where a good explanation of the code is already discussed. It is essentially adjusting Devise’s filters to allow an authenticated administrator to create a user then respond to the request with JSON if the front-end client specifies it in the `Accept` header. We’ve already configured Axios to ask for a JSON response so now Vue and Rails are speaking to each other nicely. You don’t need to make any further changes to Devise. You may be tempted to edit the `devise.rb` initializer in hopes of troubleshooting this workflow but that isn’t necessary and in some cases may break things.
 
+## Create a New User
+
+In the Vue component simply make the POST request to the Rails app with the user credentials stored in the `v-model` for the form inputs:
+
+```js
+methods: {
+  onSubmit: function () {
+    axios.post('/users', {
+      user: {
+        email: this.email,
+        password: this.password
+      }
+    })
+    .then(function (response) {
+      // whatever you want
+    })
+    .catch(function (error) {
+      // whatever you want
+    })
+  }
+}
+```
+
+The form's `onSubmit` method is called by Vue when specified in the template: `<form v-on:submit.prevent="onSubmit">`.
+
 ## Conclusion
 
 In this article I’ve only covered adding a new user through a Vue front-end as an administrator. However, this same concept can easily be applied to authenticating new sessions, editing user information, and allowing users to register on their own. Once Axios is configured properly to communicate with Devise it’s only a matter of overriding the gem’s controllers to achieve whatever functionality you want.
