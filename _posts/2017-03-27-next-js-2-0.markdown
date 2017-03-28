@@ -1,0 +1,12 @@
+---
+layout: post
+title: Next.js 2.0
+type: link
+link: https://zeit.co/blog/next2
+date: "2017-03-27 21:03:56"
+categories: links
+---
+Zeit:
+>More than **3.1 million developers** read our [announcement post](https://zeit.co/blog/next) of [Next.js](https://github.com/zeit/next.js). More than **110 contributors** have submitted patches, examples or improved our documentation. Over **10,000 developers** have starred us on [GitHub](https://github.com/zeit/next.js).
+>
+>Today, we are proud to introduce **Next 2.0** to the world.[…]
