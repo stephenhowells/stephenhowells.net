@@ -3,11 +3,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p, ol, ul, table, blockquote {
+p,
+ol,
+ul,
+table,
+blockquote {
   font-family: $font-stack;
 }
 
-blockquote, li, p {
+blockquote,
+li,
+p {
   font-size: 0.95rem;
   line-height: 1.7rem;
 }
@@ -18,9 +24,14 @@ blockquote {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $headline-fonts;
   font-weight: 600;
+
   small {
     color: lighten($body-font-color, 10%);
   }
@@ -28,7 +39,6 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-size: 1.8rem;
-
 }
 
 h3 {
@@ -36,19 +46,22 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 a {
   color: $accent-color;
-  transition: .3s;
+  transition: 0.3s;
+
   &:hover {
     color: $body-font-color;
   }
+
   &:focus {
     outline: none;
     color: $body-font-color;
   }
+
   &.link-item {
     font-weight: 400;
     font-size: 1.4rem;
@@ -56,15 +69,18 @@ a {
     font-family: $headline-fonts;
     text-decoration: none;
   }
+
   &.link_icon {
     color: lighten($body-font-color, 10%);
     font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
+
     &:hover {
       color: $body-font-color;
     }
   }
+
   &.reversefootnote {
     text-decoration: none;
   }
@@ -80,25 +96,29 @@ nav {
         font-weight: 600;
         text-decoration: none;
         line-height: 2rem;
+
         &:hover {
           color: $accent-color;
         }
+
         span {
           color: lighten($body-font-color, 10%);
           font-size: 0.85rem;
         }
       }
     }
+
     ul {
       li {
         a {
           text-decoration: none;
-          color: lighten($body-font-color, 10%);
+          color: $body-font-color;
           font-family: $headline-fonts;
           font-weight: 600;
           text-transform: uppercase;
           font-size: 0.8rem;
           line-height: 2.25rem;
+
           &:hover {
             color: $accent-color;
           }
@@ -108,7 +128,8 @@ nav {
   }
 }
 
-.post-meta, .post-meta-link {
+.post-meta,
+.post-meta-link {
   font-size: 0.7rem;
   text-align: left;
   font-family: $date-font;
@@ -123,14 +144,16 @@ nav {
   letter-spacing: 0;
   font-size: 0.5em;
   font-weight: 400;
-  line-height: 2rem
+  line-height: 2rem;
 }
 
-h1{
+h1 {
   font-size: 2.6rem;
+
   a {
     color: $body-font-color;
     text-decoration: none;
+
     &:hover {
       color: $accent-color;
     }
@@ -159,8 +182,9 @@ code {
   word-break: normal;
 }
 
-p code, li code {
-  color: rgba(0,0,0,0.5);
+p code,
+li code {
+  color: rgba(0, 0, 0, 0.5);
   white-space: nowrap;
   background: #fafafa;
   font-size: 0.85rem !important;
@@ -177,7 +201,7 @@ kbd {
   font-family: $code-font;
   padding: 2px 4px;
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .search-query {
@@ -191,6 +215,7 @@ kbd {
       color: $accent-color;
     }
   }
+
   .explanation {
     p {
       font-size: 1em;
@@ -206,6 +231,7 @@ kbd {
   line-height: 1rem;
   text-decoration: none;
   font-weight: 600;
+
   &:hover {
     color: $body-bg-color;
     background: $accent-color;
@@ -214,24 +240,30 @@ kbd {
 
 footer {
   i {
-    color: $accent-color;
+    color: #f57077;
   }
-  p, li {
+
+  p,
+  li {
     font-size: 0.7rem;
     color: $body-bg-color;
     font-family: $font-stack;
+
     a {
       color: darken($body-bg-color, 15%);
     }
   }
+
   li {
     a {
       text-decoration: none;
+
       &:hover {
-        color: #ffffff;
+        color: #fff;
       }
     }
   }
+
   .copy {
     white-space: nowrap;
   }
@@ -242,9 +274,9 @@ footer {
 }
 
 .reversefootnote {
-  padding: 3px 4px 0px 4px;
-  vertical-align: -.2rem;
-  font-size: .95rem;
-  line-height: 0px;
+  padding: 3px 4px 0;
+  vertical-align: -0.2rem;
+  font-size: 0.95rem;
+  line-height: 0;
   color: lighten($body-font-color, 30%);
 }

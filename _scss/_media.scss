@@ -2,13 +2,16 @@
   .nav {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin: 12px 0 20px 0 !important;
+    margin: 12px 0 20px !important;
+
     .logo {
       margin-bottom: 12px;
+
       .nav-logo {
         padding-left: 10px !important;
       }
     }
+
     ul {
       float: left !important;
       clear: left;
@@ -16,6 +19,7 @@
       border-top: 1px solid #eaeaea;
       background: #fafafa;
       padding-left: 10px;
+
       li {
         &:first-child {
           a {
@@ -25,6 +29,7 @@
       }
     }
   }
+
   article {
     li {
       margin-left: 20px;

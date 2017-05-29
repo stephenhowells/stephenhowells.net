@@ -6,9 +6,9 @@ $date-font: "Whitney SSm A", "Whitney SSm B", system, -apple-system, BlinkMacSys
 $footnotes: "Whitney SSm A", "Whitney SSm B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 
 // Colors
-$accent-color: #f135a6;
-$body-font-color: #555555;
-$body-bg-color: #ffffff;
+$accent-color: #3784b8;
+$body-font-color: #555;
+$body-bg-color: #fff;
 $bg-contrast: #efefef;
 
 // Dimensions
@@ -18,12 +18,12 @@ $radius: 4px;
 
 // Grid
 $small-grid: (
-  gutter: 0px,
+  gutter: 0,
   media: 200px,
 );
 
 $medium-grid: (
-  gutter: 0px,
+  gutter: 0,
   media: 600px,
 );
 
@@ -39,18 +39,22 @@ $x-large-grid: (
 
 @mixin page-box {
   @include grid-column;
+
   @include grid-media($small-grid) {
     @include grid-column(12);
     @include grid-push(0);
   }
+
   @include grid-media($medium-grid) {
     @include grid-column(10);
     @include grid-push(1);
   }
+
   @include grid-media($large-grid) {
     @include grid-column(8);
     @include grid-push(2);
   }
+
   @include grid-media($x-large-grid) {
     @include grid-column(6);
     @include grid-push(3);

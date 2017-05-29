@@ -1,9 +1,12 @@
-html, body {
+html,
+body {
   height: 100%;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -12,7 +15,7 @@ html, body {
   margin-bottom: -100px;
 }
 
-.page-wrap:after {
+.page-wrap::after {
   content: "";
   display: block;
   height: $footer-height;
@@ -21,27 +24,53 @@ html, body {
 ul {
   margin: 0;
   padding: 0;
+
   li {
     list-style: circle;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 12px;
   margin-top: 12px;
 }
 
 article {
   @include grid-container;
-  margin-bottom:120px;
 
-  h1, h2, h3, h4, h5, h6, p, ol, ul, table, blockquote, .archive-list, .search, video  {
+  margin-bottom: 120px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul,
+  table,
+  blockquote,
+  .archive-list,
+  .search,
+  video {
     @include page-box;
+
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  p, ul, ol, blockquote, table, pre {
+  p,
+  ul,
+  ol,
+  blockquote,
+  table,
+  pre {
     margin-bottom: 12px;
     margin-top: 12px;
   }
@@ -61,11 +90,13 @@ article {
 
   pre code {
     @include page-box;
+
     overflow-x: auto;
     padding: 12px 10px;
   }
 
-  p code, li code {
+  p code,
+  li code {
     border: 1px #e0e0e0 solid;
     padding: 4px;
     border-radius: $radius;
@@ -73,19 +104,24 @@ article {
 
   blockquote {
     border-left: 4px solid $accent-color;
-    p, ul, ol {
+
+    p,
+    ul,
+    ol {
       width: 100%;
       float: none;
       margin-left: 0;
     }
   }
+
   .link_icon {
     border: 0;
     margin-left: 12px;
   }
 }
 
-.post-meta, .post-meta-link {
+.post-meta,
+.post-meta-link {
   display: block;
   padding-bottom: 4px;
   margin-bottom: 20px;
@@ -105,21 +141,24 @@ article {
 img {
   max-width: 100%;
   opacity: 1;
-  transition: opacity .3s ease-in;
+  transition: opacity 0.3s ease-in;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   &.small-img {
     transform: scale(0.5);
   }
 }
 
 .archive-list {
-  margin: 0 0 60px 0;
+  margin: 0 0 60px;
+
   * {
     margin-left: 0;
     padding-left: 0;
   }
+
   h3 {
     width: 100%;
     margin-top: 0;
@@ -131,6 +170,7 @@ img {
     margin-top: 12px;
     margin-bottom: 24px;
   }
+
   .explanation {
     width: 100%;
     overflow: hidden;
@@ -144,10 +184,12 @@ img {
   ol {
     border-top: 1px dashed #eaeaea;
     padding-top: 12px;
-    padding-left: 0px;
+    padding-left: 0;
     list-style-position: inside;
+
     li {
       padding: 0 10px;
+
       p {
         margin: 0 0 20px;
         width: 100%;
@@ -161,19 +203,25 @@ img {
 
 footer {
   @include grid-container;
+
   height: $footer-height;
   background-color: $body-font-color;
   padding-top: 16px;
-  p, ul {
+
+  p,
+  ul {
     @include page-box;
   }
+
   p {
     margin-top: 0;
     padding: 0 10px;
   }
+
   ul {
     padding: 0 10px;
     margin-bottom: 4px;
+
     li {
       list-style: none;
       display: inline-block;

@@ -1,12 +1,17 @@
 .pager {
   @include grid-container;
+
   margin-bottom: 80px;
+
   ul {
     @include page-box;
+
     padding-left: 10px;
     padding-right: 10px;
+
     li {
       list-style: none;
+
       a {
         background: $body-font-color;
         padding: 14px;
