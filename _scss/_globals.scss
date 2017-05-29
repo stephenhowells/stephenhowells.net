@@ -22,9 +22,14 @@ $small-grid: (
   media: 200px,
 );
 
-$medium-grid: (
-  gutter: 0,
+$transition-grid: (
+  gutter: 5px,
   media: 600px,
+);
+
+$medium-grid: (
+  gutter: 20px,
+  media: 700px,
 );
 
 $large-grid: (
@@ -43,6 +48,11 @@ $x-large-grid: (
   @include grid-media($small-grid) {
     @include grid-column(12);
     @include grid-push(0);
+  }
+
+  @include grid-media($transition-grid) {
+    @include grid-column(10);
+    @include grid-push(1);
   }
 
   @include grid-media($medium-grid) {
