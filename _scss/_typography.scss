@@ -52,6 +52,8 @@ h4 {
 a {
   color: $accent-color;
   transition: 0.3s;
+  text-decoration-skip: ink;
+  text-decoration: underline;
 
   &:hover {
     color: $body-font-color;
