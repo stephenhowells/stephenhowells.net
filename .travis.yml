@@ -1,10 +1,14 @@
 language: ruby
 rvm:
-  - 2.4.0
+- 2.4.0
 install: gem install bundler && bundle install
 script: bundle exec jekyll build
-
-# safelist
 branches:
   only:
   - master
+notifications:
+  slack:
+    rooms:
+      secure: X0Ya0ZWajlfvgu/a+HFMF6ORm8aAjGX/LNfYI0P9SaUn+JMHwaLldushNZLFom9NU7U3YuTAgtOD9BJ51l0u+vnJ4DB5XMLTGLjysxYnprcyzNt1jsdVs5B/q2UP5YRc1iHgM1adIjDPwNiNNKTLWCN0TdvCwtHkyAShT9t+53L15qz1fyzGB8LQI3J30aFKOdZOC7gLnf0FMKAb1+KlKA4+bBwxIIOVf1IZ7n1cwTGPs6pTZc1ruOYuSP11BNdSRDZ0XpSsjq5QFyd/cyKiTlrZeW1G9CjkmCZvFuWjKb7aOOCAvXYjHqYo9Y0Vd3pZC67CCpjVcc3FgqD9n5r84lMOUYXsq88xOGCm65NJk7A4qWJERrJWp+UIpoYXgxK/+YX75/p/V6BiDsmFHVi+l98uNVChgDubBRkmEX67klsy4fVNNBBxBxM9ekN71c713jJclChtzdIg2SVHLemitbcNcLrprcFYrEKbe8t92V/2HLSZFIFcg48keyFdy42zOtJXB/LbuNnS0H/oJTBkbPzKHZOkbTgXGAvNftU9vJOU+sl26l7WMDY4BC1aiHpO3b7o6mJE0qY7bEMW8RrS5EkXw3GNTB2I2vPohcF1KSFbr79Y7cy0o1BVj6PMVr1Pm3H0/w7eMGZ4nQnOrIjDLXGUPZP37n/pxmhjc6c4Wow=
+    on_success: always
+    on_failure: always
