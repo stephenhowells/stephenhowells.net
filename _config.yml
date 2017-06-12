@@ -13,7 +13,7 @@ markdown_ext: markdown,md
 encoding: "utf-8"
 permalink: /:title/
 paginate: 5
-exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'gulpfile.js', 'package.json', 'scss-lint-config.yml', 's3_website']
+exclude: ['README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'gulpfile.js', 'package.json', 'scss-lint-config.yml', yarn.lock]
 timezone: America/Phoenix
 kramdown:
   input: GFM
