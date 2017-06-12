@@ -10,9 +10,9 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 
 ## Technical Data
 
-- This site is open source. Review the code, open issues, or even submit a pull request on [GitHub](https://github.com/stephenhowells/stephenhowells.net).
-- Proudly powered by [Jekyll](http://jekyllrb.com).
+- This site is open source so please feel free to review the code, open issues, or submit a pull request on [GitHub](https://github.com/stephenhowells/stephenhowells.net).
 - Hosted on [Netlify](https://www.netlify.com).
+- Proudly powered by [Jekyll](http://jekyllrb.com).
 - All development for this site is done in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
 - Typefaces are [Whitney](http://www.typography.com/fonts/whitney/overview/) and [Operator](http://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
 
