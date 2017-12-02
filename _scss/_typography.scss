@@ -14,13 +14,14 @@ blockquote {
 blockquote,
 li,
 p {
-  font-size: 0.95rem;
-  line-height: 1.7rem;
+  font-size: 1.15rem;
+  line-height: 1.9rem;
 }
 
 blockquote {
   p {
-    color: lighten($body-font-color, 10%);
+    color: lighten($body-font-color, 24%);
+    padding-left: 16px;
   }
 }
 
@@ -47,6 +48,10 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
+
+  &.link-item-container {
+    margin-bottom: 0;
+  }
 }
 
 a {
@@ -65,22 +70,11 @@ a {
   }
 
   &.link-item {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.4rem;
     line-height: 2rem;
     font-family: $headline-fonts;
-    text-decoration: none;
-  }
-
-  &.link_icon {
-    color: lighten($body-font-color, 10%);
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-decoration: none;
-
-    &:hover {
-      color: $body-font-color;
-    }
+    text-decoration: underline;
   }
 
   &.reversefootnote {
@@ -88,24 +82,25 @@ a {
   }
 }
 
+.link_icon {
+  color: lighten($body-font-color, 20%);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 nav {
   .nav {
     .logo {
       .nav-logo {
-        color: $body-font-color;
+        color: $accent-color;
         font-family: $headline-fonts;
-        font-size: 1.05rem;
+        font-size: 1.4rem;
         font-weight: 600;
         text-decoration: none;
         line-height: 2rem;
 
         &:hover {
           color: $accent-color;
-        }
-
-        span {
-          color: lighten($body-font-color, 10%);
-          font-size: 0.85rem;
         }
       }
     }
@@ -118,7 +113,7 @@ nav {
           font-family: $headline-fonts;
           font-weight: 600;
           text-transform: uppercase;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           line-height: 2.25rem;
 
           &:hover {
@@ -132,13 +127,18 @@ nav {
 
 .post-meta,
 .post-meta-link {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-align: left;
   font-family: $date-font;
   color: lighten($body-font-color, 10%);
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+
+  a {
+    margin-left: 4px;
+    text-decoration: none;
+  }
 }
 
 .pubdate {
@@ -151,6 +151,7 @@ nav {
 
 h1 {
   font-size: 2.6rem;
+  text-align: left;
 
   a {
     color: $body-font-color;
@@ -190,6 +191,13 @@ li code {
   white-space: nowrap;
   background: #fafafa;
   font-size: 0.85rem !important;
+}
+
+figcaption {
+  text-align: center;
+  font-family: $font-stack;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .mono {
@@ -241,7 +249,7 @@ kbd {
 }
 
 footer {
-  i {
+  .heart {
     color: #f57077;
   }
 

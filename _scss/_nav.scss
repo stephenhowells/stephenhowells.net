@@ -3,23 +3,27 @@ nav {
 
   .nav {
     @include page-box;
-
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 60px 0;
-    border-bottom: 4px solid $body-font-color;
 
     .logo {
-      display: inline-block;
-      float: left;
+      display: block;
+      clear: both;
+      text-align: center;
+      margin-bottom: 20px;
 
       .nav-logo {
-        padding: 0 12px 0 0;
+        &:hover {
+          color: $body-font-color;
+        }
       }
     }
 
     ul {
-      float: right;
+      display: block;
+      clear: both;
+      text-align: center;
+      border-top: 1px solid $body-font-color;
+      border-bottom: 1px solid $body-font-color;
 
       li {
         list-style: none;
@@ -27,6 +31,8 @@ nav {
 
         a {
           padding: 0 10px;
+          color: lighten($body-font-color, 10%);
+          letter-spacing: 0.1rem;
         }
       }
     }

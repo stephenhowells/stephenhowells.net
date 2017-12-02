@@ -8,17 +8,12 @@
       margin-bottom: 12px;
 
       .nav-logo {
-        padding-left: 10px !important;
+        font-size: 1.1rem !important;
       }
     }
 
     ul {
-      float: left !important;
-      clear: left;
-      width: 100%;
-      border-top: 1px solid #eaeaea;
       background: #fafafa;
-      padding-left: 10px;
 
       li {
         &:first-child {
@@ -31,8 +26,31 @@
   }
 
   article {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul,
+    table,
+    .archive-list,
+    .search,
+    video,
+    pre code {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     li {
       margin-left: 20px;
+    }
+    blockquote {
+      width: auto;
+      margin: 0 10px;
+      clear: both;
+      float: none;
     }
   }
 }

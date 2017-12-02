@@ -4,9 +4,9 @@ title: About
 ---
 <h1 class="page-title">{{ page.title | no_widows }}</h1>
 
-![Stephen Howells](/dist/img/fam_color.jpg){:data-action="zoom"}
-
 I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primarily write about software development, design, and gadgets. I have a wonderful wife named Mary and we have three excellent children. I like black coffee, barbecue, and tacos. You should follow me on [Twitter](https://twitter.com/stephenhowells) and share code with me on [GitHub](https://github.com/stephenhowells).
+
+{% figure /dist/img/fam_color.jpg "My lovely wife, wonderful children, and nerdy me." %}
 
 ## Technical Data
 
@@ -14,7 +14,7 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - Hosted on [Netlify](https://www.netlify.com).
 - Proudly powered by [Jekyll](http://jekyllrb.com).
 - All development for this site is done in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
-- Typefaces are [Whitney](http://www.typography.com/fonts/whitney/overview/) and [Operator](http://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
+- Typefaces are [Sentinel](https://www.typography.com/fonts/sentinel/overview/), [Whitney Condensed](https://www.typography.com/fonts/whitney-condensed/overview/), and [Operator](https://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
 
 ## My Toolbox
 
@@ -28,7 +28,7 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - [Reeder](http://reederapp.com/)
 - [Ruby on Rails](http://rubyonrails.org/)
 - [Sketch](https://www.sketchapp.com/)
-- [Todoist](https://todoist.com)
+- [Things 3](https://culturedcode.com/things/)
 - [Tower 2](http://www.git-tower.com)
 - [Transmit](http://panic.com/transmit)
 

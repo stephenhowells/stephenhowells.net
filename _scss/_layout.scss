@@ -55,14 +55,10 @@ article {
   ol,
   ul,
   table,
-  blockquote,
   .archive-list,
   .search,
   video {
     @include page-box;
-
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   p,
@@ -92,7 +88,7 @@ article {
     @include page-box;
 
     overflow-x: auto;
-    padding: 12px 10px;
+    padding: 12px 0;
   }
 
   p code,
@@ -103,7 +99,8 @@ article {
   }
 
   blockquote {
-    border-left: 4px solid $accent-color;
+    @include page-box;
+    border-left: 3px solid $accent-color;
 
     p,
     ul,
@@ -138,16 +135,25 @@ article {
   margin-bottom: 12px;
 }
 
-img {
-  max-width: 100%;
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  &.small-img {
-    transform: scale(0.5);
+figure {
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  clear: both;
+  overflow: visible;
+  img {
+    height: auto;
+    max-width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    display: inline-block;
+    margin: 12px auto 0;
+  }
+  figcaption {
+    display: inline-block;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 24px;
   }
 }
 

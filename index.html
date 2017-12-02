@@ -12,7 +12,8 @@ custom_css_class: home
       <p class="post-meta">{% include time.html the_date=post.date %}</p>
       {{ post.content }}
     {% elsif post.type == 'link' %}
-      <h4><a href="{{ post.link }}" class="link-item">{{ post.title | no_widows }}</a>&nbsp;<a href="{{ post.url }}" class="link_icon" title="Permalink">&nbsp;<i class="icon ion-bookmark"></i></a></h4>
+      <h4 class="link-item-container"><a href="{{ post.link }}" class="link-item">{{ post.title | no_widows }}</a>&nbsp;<span class="link_icon">→</span></h4>
+      <p class="post-meta">{% include time.html the_date=post.date %}<a href="{{ post.url }}" title="Permalink">∞</a></p>
       {{ post.content }}
     {% endif %}
   </article>

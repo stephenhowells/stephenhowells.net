@@ -8,8 +8,8 @@ custom_css_class: single-post
     <p class="post-meta">{% include time.html the_date=page.date %}</p>
     {{ content }}
   {% elsif page.type == 'link' %}
-    <h4><a href="{{ page.link }}" class="link-item">{{ page.title | no_widows }}</a></h4>
-    {{ content }}
+    <h4 class="link-item-container"><a href="{{ page.link }}" class="link-item">{{ page.title | no_widows }}</a></h4>
     <p class="post-meta-link">{% include time.html the_date=page.date %}</p>
+    {{ content }}
   {% endif %}
 </article>
