@@ -14,7 +14,7 @@ I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primaril
 - Hosted on [Netlify](https://www.netlify.com).
 - Proudly powered by [Jekyll](http://jekyllrb.com).
 - All development for this site is done in [Atom](https://atom.io) on a late 2013 15-inch Retina MacBook Pro.
-- Typefaces are [Sentinel](https://www.typography.com/fonts/sentinel/overview/), [Whitney Condensed](https://www.typography.com/fonts/whitney-condensed/overview/), and [Operator](https://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
+- Typefaces are [Sentinel](https://www.typography.com/fonts/sentinel/overview/), [Whitney Condensed](https://www.typography.com/fonts/whitney-condensed/overview/), and [Operator Mono](https://www.typography.com/fonts/operator/overview/) by Hoefler & Co.
 
 ## My Toolbox
 
