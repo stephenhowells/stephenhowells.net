@@ -1,4 +1,11 @@
 @media (max-width: 599px) {
+  blockquote,
+  li,
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
   .nav {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -14,14 +21,6 @@
 
     ul {
       background: #fafafa;
-
-      li {
-        &:first-child {
-          a {
-            padding-left: 0 !important;
-          }
-        }
-      }
     }
   }
 
@@ -40,15 +39,15 @@
     .search,
     video,
     pre code {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     li {
-      margin-left: 20px;
+      margin-left: 30px;
     }
     blockquote {
       width: auto;
-      margin: 0 10px;
+      margin: 0 20px;
       clear: both;
       float: none;
     }
