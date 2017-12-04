@@ -11,10 +11,20 @@ nav {
       text-align: center;
       margin-bottom: 20px;
 
-      .nav-logo {
-        &:hover {
-          color: $body-font-color;
+      .mark {
+        fill: currentColor;
+        color: $body-font-color;
+
+        svg {
+          width: 25%;
+          margin: 0 auto 20px;
         }
+      }
+
+      .nav-logo {
+        display: block;
+        color: $accent-color;
+        letter-spacing: 0.1rem;
       }
     }
 
