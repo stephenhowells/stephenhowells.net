@@ -3,7 +3,7 @@ nav {
 
   .nav {
     @include page-box;
-    margin: 60px 0;
+    margin: 30px 0 60px 0;
 
     .logo {
       display: block;
@@ -17,7 +17,7 @@ nav {
 
         svg {
           width: 25%;
-          margin: 0 auto 20px;
+          margin: 0 auto 10px;
         }
       }
 
