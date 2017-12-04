@@ -6,7 +6,7 @@ title: About
 
 I'm Stephen Howells, a web and iOS developer living in sunny Arizona. I primarily write about software development, design, and gadgets. I have a wonderful wife named Mary and we have three excellent children. I like black coffee, barbecue, and tacos. You should follow me on [Twitter](https://twitter.com/stephenhowells) and share code with me on [GitHub](https://github.com/stephenhowells).
 
-{% figure /dist/img/fam_color.jpg "My lovely wife, wonderful children, and nerdy me." %}
+{% figure /dist/img/fam_bw.jpg "My lovely wife, wonderful children, and nerdy me." %}
 
 ## Technical Data
 

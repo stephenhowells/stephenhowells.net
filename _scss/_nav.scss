@@ -17,11 +17,12 @@ nav {
 
         svg {
           width: 25%;
-          margin: 0 auto 10px;
+          margin: 0 auto;
         }
       }
 
-      .nav-logo {
+      .nav-tagline {
+        margin-top: 10px;
         display: block;
         color: $accent-color;
         letter-spacing: 0.1rem;
